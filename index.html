@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        #circle{
+            width: 120px;
+            height:120px;
+            position:fixed;
+            bottom:20px;
+            left:20px;
+            background-color: blue;
+            box-shadow: 2px 2px 5px black;
+            background-image: url(../sun.png);
+            background-size: 100% 120px;
+        }
+        #mainlist{
+            list-style:none;
+        }
+        .mli{
+            background-color: greenyellow;
+            color: white;
+            font-size: 20px;
+            position:relative;
+            bottom:130px;
+            left:40px;
+            box-shadow:2px 2px 5px black;
+            border-radius: 5px;
+            padding:2px;
+            text-align: center;
+            display:none;
+        }
+        .mli:hover{
+            background-color: teal;
+        }
+        .sli{
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+            left:115px;
+            bottom:25px;
+            background-color: black;
+            display: none;
+        }
+        .sli:hover{
+            background-color: red;
+        }
+        #sublist{
+            list-style:none;
+        }
+        #sub{
+            height: 20px;
+        }
+        #circle:hover .mli{
+            display:block;
+        }
+        #sub:hover .sli{
+            display:block;
+        }
+        body{
+            background-color:chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle">
+        <ul id="mainlist">
+            <li class="mli" id="sub">cars
+                <ul id="sublist">
+                    <li class="sli">Totota</li>
+                    <li class="sli">Suzuki</li>
+                    <li class="sli">Honda</li>
+                    <li class="sli">Tata</li>
+                </ul>
+            </li>
+            <li class="mli">Bikes</li>
+            <li class="mli">Trains</li>
+            <li class="mli">Bullacots</li>
+            <li class="mli">Varahi</li>
+        </ul>
+    </div>
+</body>
+</html>
